@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* App Container */
+  #app {
+    background: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  #app:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* Note Form */
+  #note-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  #note-text {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #b2dfdb;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  #note-text:focus {
+    border: 2px solid #00796b;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #00796b;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004d40;
+  }
+  
+  /* Notes List */
+  ul#notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Note Item */
+  ul#notes-list li {
+    background: #e0f2f1;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  ul#notes-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Delete Button */
+  ul#notes-list li button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  ul#notes-list li button:hover {
+    background-color: #b71c1c;
+  }
+  
